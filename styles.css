@@ -331,6 +331,12 @@ nav .fly-item {
     z-index: 1;
 }
 
+/*Header Main Departments style*/
+.header-main {
+background-color: var(--secondary-dark-color);
+padding: 1.5em 0;
+margin-bottom: 2.5em;
+}
 
 
 
