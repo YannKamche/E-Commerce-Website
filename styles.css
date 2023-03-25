@@ -146,7 +146,7 @@ h4 {
 }
 .icon-small {
     font-size: 1.25em;
-    margin: auto;
+    margin-left: auto;
 }
 .icon-large {
     font-size: 1.75em;
@@ -205,6 +205,11 @@ h4 {
     display: flex;
     gap: 1em;
     transition: var(--trans-color);
+}
+
+.mini-text {
+    font-size: var(--font-smaller);
+    color: var(--light-text-color);
 }
 
 /* Header Style*/
@@ -338,11 +343,77 @@ padding: 1.5em 0;
 margin-bottom: 2.5em;
 }
 
+.dp-cat {
+    position: relative;
+    z-index: 10;
+}
+.dpt-cat .dpt-head {
+    position: relative;
+    width: 300px;
+    background-color: var(--primary-color);
+    border-radius: 7px 7px 0 0;
+    padding: 0.75em 1.5em;
+    color: var(--white-color);
+    margin-bottom: -2.15em;    
+}
+.dpt-cat .dpt-head .mini-text {
+    color: var(--light-bg-color)
+}
+.dpt-cat .dpt-trigger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1.3em;
+    height: 60px;
+    width: 60px;
+}
 
-
-
-
-
+.dpt-menu > ul > li >a {
+    font-size: var(--font-small);
+    height: 46px;
+    align-items: center;
+}
+/*Search Form Styles*/
+.header-main .right {
+    flex: 1;
+    
+}
+form {
+    position: relative;
+}
+form.search input {
+    line-height: 3.25em;
+    padding: 0 7em 0 4.5em;
+    border: 0;
+    outline: 0;
+    width: var(--percent100);
+    border-radius: 7px;
+    font-size: 0.9em;
+    font-weight: var(--fw3);
+}
+form.search :where(span,button) {
+    position: absolute;
+    top: 0;
+    padding: 0.55em 1.5em;
+    font-size: 1em;
+    color: var(--light-text-color);
+    height: var(--percent100);
+}
+form.search button {
+    right: 0;
+    border: 0;
+    outline: 0;
+    font-size: 0.875em;
+    font-weight: var(--fw6);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 0 7px 7px 0;
+    transition: var(--trans-background);
+    cursor: pointer;
+}
+form.search button:hover {
+    background-color: var(--dark-color);
+}
 
 
 @media screen and (min-width: 992px){
@@ -434,5 +505,27 @@ margin-bottom: 2.5em;
         font-weight: var(--fw8);
         text-align: center;
         color: var(--secondary-dark-color);
+    }
+
+    .header-main .right {
+        max-width: 600px;
+        margin-left: auto;
+        
+    }
+    /* Department Menu style*/
+    .dpt-menu {
+        position: absolute; /* suppose to be absolute*/
+        top: var(--percent100);
+        width: 300px;
+        background-color: var(--white-color);
+        border: 1px solid var(--border-color);
+        border-top: 0;
+        border-bottom: 0;
+        
+    }
+    .dpt-menu > ul > li >a {
+        font-weight: var(--fw5);
+        padding: 0 1.5em;
+        border-bottom: 1px solid var(--border-color);
     }
 }
