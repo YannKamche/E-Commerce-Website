@@ -2,6 +2,7 @@
 
 :root{
     --blue:#2980b9;
+    --pink: rgb(223, 90, 225);
 }
 
 *{
@@ -802,4 +803,11 @@ header .header-2.header-active{
         padding-bottom: 1.5rem;
     }
 
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, rgb(223, 90, 225), var(--blue), transparent);
+    border-radius: 16px;
 }
