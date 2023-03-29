@@ -5,13 +5,15 @@
     --pink: rgb(223, 90, 225);
 }
 
+
 *{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
     box-sizing: border-box;
     text-transform: capitalize;
     text-decoration: none;
     transition: all .2s cubic-bezier(.37,1.14,.26,1.24);
+   
 }
 
 *::selection{
@@ -22,6 +24,7 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    
 }
 
 .btn{
@@ -215,7 +218,7 @@ header .header-2.header-active{
     flex-wrap: wrap;
     padding:2rem 0;
     width: 85%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .arrival .box-container .box{
@@ -694,6 +697,7 @@ header .header-2.header-active{
 
     html{
         font-size: 55%;
+        
     }
     
     header .header-1 .form-container form #search{
