@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
 :root{
-    --blue:#2980b9;
-    --pink: rgb(223, 90, 225);
+    --color1: black;
+    --color2: white;
+    --color3: yellow;
+    --color4: rgb(18, 210, 18);
+    --color5:  rgb(119, 119, 103);
+    /*12b262 or 34c759 for the price green*/
+    /*ff3b30 or e55050 for the discount */
 }
-
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -17,8 +21,8 @@
 }
 
 *::selection{
-    background:#ff3300;
-    color:#fff;
+    background: var(--color1);
+    color: var(--color4);
 }
 
 html{
@@ -30,17 +34,22 @@ html{
 .btn{
     height: 4rem;
     width: 14rem;
-    background:var(--blue);
-    color:#fff;
+    background:var(--color1);
+    color: var(--color2);
     font-size: 2rem;
     cursor: pointer;
     border:none;
     outline: none;
+    border-radius: 20px;
+    transition: .5s ease-in-out;
 }
 
 .btn:hover{
     letter-spacing: .2rem;
     opacity: .8;
+    background: var(--color3);
+    color: var(--color1);
+
 }
 
 .heading{
@@ -70,11 +79,11 @@ header .header-1, header .header-2{
 
 header .header-1 .logo{
     font-size: 2rem;
-    color:#666;
+    color: var(--color1);
 }
 
 header .header-1 .logo i{
-    color:var(--blue);
+    color: var(--color1);
 }
 
 header .header-1 .form-container form{
@@ -91,7 +100,7 @@ header .header-1 .form-container form #search{
 }
 
 header .header-1 .form-container form #search:focus{
-    border-color: var(--blue);;
+    border: none;
 }
 
 header .header-1 .form-container form label{
@@ -101,8 +110,8 @@ header .header-1 .form-container form label{
     line-height: 4rem;
     font-size: 2rem;
     cursor: pointer;
-    background: var(--blue);
-    color:#fff;
+    background: var(--color1);
+    color: var(--color2);
 }
 
 header .header-1 .form-container form label:hover{
@@ -110,7 +119,7 @@ header .header-1 .form-container form label:hover{
 }
 
 header .header-2{
-    background:var(--blue);
+    background:var(--color1);
 }
 
 header .header-2 .navbar ul{
@@ -126,27 +135,27 @@ header .header-2 .navbar ul li{
 
 header .header-2 .navbar ul li a{
     font-size: 2rem;
-    color:#fff;
+    color: var(--color2);
 }
 
 header .header-2 .navbar ul li a.active,
 header .header-2 .navbar ul li a:hover{
-    color:yellow;
+    color:var(--color3);
 }
 
 header .header-2 .icons a{
-    color: #fff;
+    color: var(--color2);
     font-size: 2rem;
     padding: 0 1rem;
 }
 
 header .header-2 .icons a:hover{
-    color:yellow;
+    color: var(--color3);
 }
 
 header .header-2 #menu{
     font-size: 3rem;
-    color:#fff;
+    color: var(--color4);
     cursor: pointer;
     display: none;
 }
@@ -703,6 +712,14 @@ header .header-2.header-active{
     header .header-1 .form-container form #search{
         width: 100%;
     }
+    
+    header .header-1 .form-container form label:hover {
+        color: var(--color4);
+    }
+
+    header .header-2 .icons a:hover {
+        color: var(--color4);
+    }
 
     header .header-2 #menu{
         display: block;
@@ -717,11 +734,15 @@ header .header-2.header-active{
         opacity: 0;
     }
 
+    .btn:hover {
+        background-color: var(--color4);
+    }
+
     header .header-2 .navbar ul{
         flex-flow: column;
-        background: linear-gradient(var(--blue), blueviolet);
-        border:.2rem solid #fff;
-        box-shadow: 0 .3rem .5rem #000;
+        background: linear-gradient(transparent, var(--color5), transparent);
+        border:.2rem solid var(--color3);
+        box-shadow: 0 .3rem .5rem var(--color1);
         padding:4rem 0;
         width: 27rem;
     }
@@ -735,6 +756,10 @@ header .header-2.header-active{
     header .header-2 .navbar ul li a{
         font-size: 2.5rem;
         display: block;
+    }
+
+    header .header-1 form .form-container #search:focus{
+        border: none;
     }
 
     .fa-times{
@@ -812,6 +837,6 @@ header .header-2.header-active{
     width: 12px;
 }
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(transparent, rgb(223, 90, 225), var(--blue), transparent);
+    background: linear-gradient(black, rgb(255, 255, 0), black);
     border-radius: 16px;
 }
