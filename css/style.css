@@ -13,6 +13,10 @@
     --discount1: #ff3b30;
     --discount2: #e55050;
     --star: orange;
+    --overlay-favicon-color: #666;
+    --overlay-favicon-background: white;
+    --overlay-background:  rgba(255, 255, 0, 0.132);
+    --arrival-box-shadow: black;
     /*12b262 or 34c759 for the price green*/
     /*ff3b30 or e55050 for the discount */
 }
@@ -243,6 +247,13 @@ header .header-2.header-active{
     position: relative;
     margin:1rem 2rem;
     border-radius: 1.5rem;
+    transition: .5s ease-in-out;
+    box-shadow: 1px 1px 10px 1px var(--arrival-box-shadow);
+}
+
+
+.arrival .box-container .box:hover {
+    transform: scale(1.1);
 }
 
 .arrival .box-container .box .image{
@@ -292,7 +303,7 @@ header .header-2.header-active{
     top:0; left: 0;
     height:20rem;
     width: 100%;
-    background:rgba(0,0,0,.3);
+    background: var(--overlay-background);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,10 +315,10 @@ header .header-2.header-active{
 }
 
 .arrival .box-container .box .overlay a{
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding:1.5rem 2rem;
-    background:#fff;
-    color:#666;
+    background: var(--overlay-favicon-background);
+    color: var(--overlay-favicon-color);
     margin:1rem;
     transform: translateY(-15rem);
     transition-delay: calc(.1s * var(--i));
@@ -318,12 +329,12 @@ header .header-2.header-active{
 }
 
 .arrival .box-container .box .overlay a:hover{
-    color:var(--blue);
+    color:var(--price2);
 }
 
 .feature{
     min-height: 100vh;
-    background:linear-gradient(165deg, #fff 50%, var(--blue) 50.1%);
+    background:linear-gradient(165deg, #fff 50%, var(--color6) 50.1% ); /*,rgb(215, 154, 154));*/
     padding-bottom: 2rem;
 }
 
@@ -335,9 +346,10 @@ header .header-2.header-active{
     padding:2rem 0;
     margin:3rem auto;
     width: 95%;
-    background:#fff;
+    background: var(--color2);
     box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
     border-radius: 1rem;
+    height: 60vh;
 }
 
 .feature .row .image-container{
@@ -363,11 +375,16 @@ header .header-2.header-active{
     margin:1rem;
     border:.1rem solid #666;
     cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.feature .row .image-container .small-image img:hover {
+    transform: scale(1.5);
 }
 
 .feature .row .image-container .small-image img.image-active,
 .feature .row .image-container .small-image img:hover{
-    border:.2rem solid var(--blue);
+    border:.2rem solid var(--color6);
+   
 }
 
 .feature .row .content{
@@ -381,7 +398,7 @@ header .header-2.header-active{
 
 .feature .row .content .stars i{
     font-size: 2rem;
-    color:orange;
+    color: var(--star);
     padding: 1rem 0;
 }
 
@@ -398,12 +415,12 @@ header .header-2.header-active{
 }
 
 .feature .row .content .price{
-    color:#ff3300;
+    color: var(--price2);
     font-size: 2rem;
 }
 
 .feature .row .content .price span{
-    color:#666;
+    color: var(--discount1);
     text-decoration: line-through;
     font-size: 1.5rem;
 }
