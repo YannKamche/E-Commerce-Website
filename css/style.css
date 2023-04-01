@@ -6,6 +6,13 @@
     --color3: yellow;
     --color4: rgb(18, 210, 18);
     --color5:  rgb(119, 119, 103);
+    --color6: rgb(37, 228, 212);
+    --background: #f0f0f0;
+    --price1: #12b262;
+    --price2: #34c759;
+    --discount1: #ff3b30;
+    --discount2: #e55050;
+    --star: orange;
     /*12b262 or 34c759 for the price green*/
     /*ff3b30 or e55050 for the discount */
 }
@@ -62,9 +69,8 @@ html{
 .heading span{
     font-size: 2rem;
     padding:1rem 6rem;
-    color:#fff;
-    background:var(--blue);
-    border-top-right-radius: 3rem;
+    color: var(--color3);
+    background: var(--color1);
     display: inline-block;
 }
 
@@ -115,7 +121,7 @@ header .header-1 .form-container form label{
 }
 
 header .header-1 .form-container form label:hover{
-    color:yellow;
+    color: var(--color3);
 }
 
 header .header-2{
@@ -183,14 +189,14 @@ header .header-2.header-active{
 }
 
 .home .home-slider .item .content h3{
-    color:#fff;
+    color : var(--color6);
     text-shadow: 0 .3rem .5rem #000;
     font-size: 5rem;
     text-transform: uppercase;
 }
 
 .home .home-slider .item .content p{
-    color:#fff;
+    color: var(--color2);
     font-size: 2.5rem;
     padding:2rem 0;
     width: 50rem;
@@ -212,7 +218,7 @@ header .header-2.header-active{
 }
 
 .home .owl-carousel .owl-prev span, .home .owl-carousel .owl-next span{
-    color:#fff;
+    color: var(--color2);
     font-size: 7rem;
 }
 
@@ -236,13 +242,14 @@ header .header-2.header-active{
     overflow: hidden;
     position: relative;
     margin:1rem 2rem;
+    border-radius: 1.5rem;
 }
 
 .arrival .box-container .box .image{
     height: 20rem;
     padding:2rem;
     text-align: center;
-    background:#f0f0f0;
+    background: var(--background);
 }
 
 .arrival .box-container .box .image img{
@@ -253,7 +260,7 @@ header .header-2.header-active{
 .arrival .box-container .box .info h3{
     padding:1rem;
     font-size: 2rem;
-    color:var(--blue);
+    color:var(--color1);
 }
 
 .arrival .box-container .box .info .subInfo{
@@ -265,18 +272,18 @@ header .header-2.header-active{
 }
 
 .arrival .box-container .box .info .subInfo .price{
-    color:#ff3300;
+    color: var(--price2);
     font-size: 2rem;
 }
 
 .arrival .box-container .box .info .subInfo .price span{
-    color:#666;
+    color: var(--discount1);
     font-size: 1.5rem;
     text-decoration: line-through;
 }
 
 .arrival .box-container .box .info .subInfo .stars i{
-    color:orange;
+    color: var(--star);
     font-size: 1.5rem;
 }
 
