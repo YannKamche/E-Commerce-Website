@@ -17,6 +17,7 @@
     --overlay-favicon-background: white;
     --overlay-background:  rgba(255, 255, 0, 0.132);
     --arrival-box-shadow: #242424;
+    --scroll-bar:  rgba(0, 0, 0, 0.521);
     /*12b262 or 34c759 for the price green*/
     /*ff3b30 or e55050 for the discount */
 }
@@ -607,12 +608,12 @@ header .header-2.header-active{
 }
 
 .newsletter h1{
-    color:#fff;
+    color: var(--color1);
     font-size: 4rem;
 }
 
 .newsletter p{
-    color:#fff;
+    color: var(--color1);
     font-size: 2rem;
     padding:1rem 0;
 }
@@ -706,8 +707,13 @@ header .header-2.header-active{
 .footer .credit span{
     color:var(--blue);
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(black, rgb(255, 255, 0), black);
+    background-color: var(--scroll-bar);
     border-radius: 16px;
 }
 
@@ -768,9 +774,9 @@ header .header-2.header-active{
 
     header .header-2 .navbar ul{
         flex-flow: column;
-        background: linear-gradient(transparent, var(--color5), transparent);
-        border:.2rem solid var(--color3);
-        box-shadow: 0 .3rem .5rem var(--color1);
+        background: linear-gradient(var(--color6), transparent, var(--color6));
+        border:.2rem solid var(--color6);
+        box-shadow: 0 .3rem .5rem #242424;
         padding:4rem 0;
         width: 27rem;
     }
@@ -801,11 +807,6 @@ header .header-2.header-active{
 
     .arrival .box-container{
         width: auto;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: linear-gradient(transparent, grey, #242424);
-        border-radius: 16px;
     }
 
 }
@@ -866,7 +867,4 @@ header .header-2.header-active{
         padding-bottom: 1.5rem;
     }
 
-}
-::-webkit-scrollbar {
-    width: 12px;
 }
