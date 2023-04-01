@@ -16,7 +16,7 @@
     --overlay-favicon-color: #666;
     --overlay-favicon-background: white;
     --overlay-background:  rgba(255, 255, 0, 0.132);
-    --arrival-box-shadow: black;
+    --arrival-box-shadow: #242424;
     /*12b262 or 34c759 for the price green*/
     /*ff3b30 or e55050 for the discount */
 }
@@ -165,7 +165,7 @@ header .header-2 .icons a:hover{
 
 header .header-2 #menu{
     font-size: 3rem;
-    color: var(--color4);
+    color: var(--color6);
     cursor: pointer;
     display: none;
 }
@@ -248,7 +248,7 @@ header .header-2.header-active{
     margin:1rem 2rem;
     border-radius: 1.5rem;
     transition: .5s ease-in-out;
-    box-shadow: 1px 1px 10px 1px var(--arrival-box-shadow);
+    box-shadow: 1px 1px 15px .1px var(--arrival-box-shadow);
 }
 
 
@@ -349,7 +349,7 @@ header .header-2.header-active{
     background: var(--color2);
     box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
     border-radius: 1rem;
-    height: 60vh;
+    
 }
 
 .feature .row .image-container{
@@ -706,6 +706,10 @@ header .header-2.header-active{
 .footer .credit span{
     color:var(--blue);
 }
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(black, rgb(255, 255, 0), black);
+    border-radius: 16px;
+}
 
 
 
@@ -738,11 +742,11 @@ header .header-2.header-active{
     }
     
     header .header-1 .form-container form label:hover {
-        color: var(--color4);
+        color: var(--color6);
     }
 
     header .header-2 .icons a:hover {
-        color: var(--color4);
+        color: var(--color6);
     }
 
     header .header-2 #menu{
@@ -799,6 +803,11 @@ header .header-2.header-active{
         width: auto;
     }
 
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(transparent, grey, #242424);
+        border-radius: 16px;
+    }
+
 }
 
 @media (max-width:600px){
@@ -837,7 +846,8 @@ header .header-2.header-active{
     .feature .row .content .btn{
         margin: 2rem 0;
     }
-
+    
+    
 }
 
 
@@ -859,8 +869,4 @@ header .header-2.header-active{
 }
 ::-webkit-scrollbar {
     width: 12px;
-}
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(black, rgb(255, 255, 0), black);
-    border-radius: 16px;
 }
