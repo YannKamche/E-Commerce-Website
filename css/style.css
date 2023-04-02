@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
+/* root selector for all the colors of the website*/
 :root{
     --color1: black;
     --color2: white;
@@ -22,6 +23,9 @@
     /*ff3b30 or e55050 for the discount */
 }
 
+/* "*" selects all tags in the website and gives them the following properties (Kind of 
+an initializer) */
+
 *{
     font-family: 'Poppins', sans-serif;
     margin:0; padding:0;
@@ -32,17 +36,19 @@
    
 }
 
+/* Applies style to highlighted parts of the website */
+
 *::selection{
     background: var(--color1);
     color: var(--color4);
 }
-
+/* Style the website*/
 html{
     font-size: 62.5%;
     overflow-x: hidden;
     
 }
-
+/* Styles the different buttons in the website*/
 .btn{
     height: 4rem;
     width: 14rem;
@@ -55,6 +61,7 @@ html{
     border-radius: 20px;
     transition: .5s ease-in-out;
 }
+/* Action upon hovering on a button on a desktop view */
 
 .btn:hover{
     letter-spacing: .2rem;
@@ -63,6 +70,7 @@ html{
     color: var(--color1);
 
 }
+/*Styles the headings of each section i.e  New arrivals, Featured Products etc*/
 
 .heading{
     padding-top: 7rem;
@@ -71,6 +79,8 @@ html{
     margin:0 auto;
 }
 
+/*Styles the text of the different headings of each section*/
+
 .heading span{
     font-size: 2rem;
     padding:1rem 6rem;
@@ -78,6 +88,8 @@ html{
     background: var(--color1);
     display: inline-block;
 }
+
+/*Styles the first and second headers of the website*/
 
 header .header-1, header .header-2{
     display: flex;
@@ -88,18 +100,23 @@ header .header-1, header .header-2{
     z-index: 1000;
 }
 
+/*Styles the hyperlink at the first header (Shopping)*/
+
 header .header-1 .logo{
     font-size: 2rem;
     color: var(--color1);
 }
 
+/*Styles the font awesome shopping bag, besides the hyperlink "shopping" */
 header .header-1 .logo i{
     color: var(--color1);
 }
+/*Styles the form at the first header*/
 
 header .header-1 .form-container form{
     display: flex;
 }
+/* Styles the input tag */
 
 header .header-1 .form-container form #search{
     height: 4rem;
@@ -110,10 +127,15 @@ header .header-1 .form-container form #search{
     padding:0 1rem;
 }
 
+/*Sets the action when you focus or click on the
+search bar. In this case, it removes the border*/
+
 header .header-1 .form-container form #search:focus{
     border: none;
 }
 
+/*Styles the form's label (the font awesome search icon
+since there is no text in it*/
 header .header-1 .form-container form label{
     height: 4rem;
     width: 5rem;
@@ -125,13 +147,19 @@ header .header-1 .form-container form label{
     color: var(--color2);
 }
 
+/*Styles the search icon on hover on a desktop view*/
+
 header .header-1 .form-container form label:hover{
     color: var(--color3);
 }
 
+/*Styles the background of the second header (black) */
+
 header .header-2{
     background:var(--color1);
 }
+
+/*Styles the navbar of the second header*/
 
 header .header-2 .navbar ul{
     list-style: none;
@@ -139,20 +167,28 @@ header .header-2 .navbar ul{
     align-items: center;
     justify-content: space-between;
 }
+/*Styles each list item of the navbar*/
 
 header .header-2 .navbar ul li{
     margin:0 1rem;
 }
+
+/*Styles the hyperlink in the each list item*/
 
 header .header-2 .navbar ul li a{
     font-size: 2rem;
     color: var(--color2);
 }
 
+/*Styles the links upon hover of each list item
+and sets the first link to yellow by default (reason for a.active at line 186)*/
+
 header .header-2 .navbar ul li a.active,
 header .header-2 .navbar ul li a:hover{
     color:var(--color3);
 }
+/*Styles the content of the link which are the font awesome icons on
+the second header*/
 
 header .header-2 .icons a{
     color: var(--color2);
@@ -160,22 +196,27 @@ header .header-2 .icons a{
     padding: 0 1rem;
 }
 
+/*Action upon hovering on the icons*/
 header .header-2 .icons a:hover{
     color: var(--color3);
 }
 
+/*Styles the font awesome menu and give it a display of none when 
+viewing the site on large screen*/
 header .header-2 #menu{
     font-size: 3rem;
     color: var(--color6);
     cursor: pointer;
     display: none;
 }
-
+/*styles */
 header .header-2.header-active{
     position: fixed;
     top:0; left: 0;
     box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
 }
+
+/**/
 
 .home .home-slider .item{
     position: relative;
@@ -335,7 +376,7 @@ header .header-2.header-active{
 
 .feature{
     min-height: 100vh;
-    background:linear-gradient(165deg, #fff 50%, var(--color6) 50.1% ); /*,rgb(215, 154, 154));*/
+    background:linear-gradient(168deg, #fff 50%, var(--color6) 50.1% ); /*,rgb(215, 154, 154));*/
     padding-bottom: 2rem;
 }
 
@@ -351,6 +392,13 @@ header .header-2.header-active{
     box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
     border-radius: 1rem;
     
+}
+
+.feature .brands {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    background-color: var(--color2);
 }
 
 .feature .row .image-container{
@@ -705,7 +753,7 @@ header .header-2.header-active{
 }
 
 .footer .credit span{
-    color:var(--blue);
+    color:var(--color1);
 }
 
 ::-webkit-scrollbar {
@@ -774,8 +822,8 @@ header .header-2.header-active{
 
     header .header-2 .navbar ul{
         flex-flow: column;
-        background: linear-gradient(var(--color6), transparent, var(--color6));
-        border:.2rem solid var(--color6);
+        background: linear-gradient(transparent, var(--color5) ,transparent);
+        border:.2rem solid var(--color5);
         box-shadow: 0 .3rem .5rem #242424;
         padding:4rem 0;
         width: 27rem;
@@ -807,6 +855,10 @@ header .header-2.header-active{
 
     .arrival .box-container{
         width: auto;
+    }
+
+    .feature .brands .img {
+        size: 2em;
     }
 
 }
