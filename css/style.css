@@ -625,7 +625,7 @@ header .header-2.header-active{
     padding:1rem;
     margin:1rem;
     text-align: center;
-    border:.2rem solid var(--blue);
+    border:.2rem solid var(--color1);
 }
 
 .deal .icons-container .icons i{
