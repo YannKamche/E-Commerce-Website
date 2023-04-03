@@ -629,7 +629,7 @@ header .header-2.header-active{
 }
 
 .deal .icons-container .icons i{
-    color:var(--blue);
+    color:var(--color4);
     font-size: 4rem;
     padding:1rem 0;
 }
@@ -646,7 +646,7 @@ header .header-2.header-active{
 }
 
 .newsletter{
-    background:linear-gradient(var(--blue),var(--blue)), url(../images/deal1.jpg) no-repeat;
+    background:linear-gradient(var(--color1),var(--color2),var(--color1)), url(../images/deal1.jpg) no-repeat;
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
@@ -710,7 +710,7 @@ header .header-2.header-active{
 }
 
 .footer .box-container .box i{
-    color:var(--blue);
+    color:var(--color4);
 }
 
 .footer .box-container .box p{
