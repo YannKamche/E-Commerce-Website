@@ -382,13 +382,13 @@ the Y-direction*/
 .arrival .box-container .box .overlay a:hover{
     color:var(--price2);
 }
-
+/*Styles the feature section*/
 .feature{
     min-height: 100vh;
     background:linear-gradient(168deg, #fff 50%, var(--color6) 50.1% ); /*,rgb(215, 154, 154));*/
     padding-bottom: 2rem;
 }
-
+/*Styles the */
 .feature .row{
     display: flex;
     align-items: center;
