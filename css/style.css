@@ -37,7 +37,6 @@ an initializer) */
 }
 
 /* Applies style to highlighted parts of the website */
-
 *::selection{
     background: var(--color1);
     color: var(--color4);
