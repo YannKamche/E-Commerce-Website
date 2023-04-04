@@ -80,7 +80,6 @@ html{
 }
 
 /*Styles the text of the different headings of each section*/
-
 .heading span{
     font-size: 2rem;
     padding:1rem 6rem;
@@ -90,7 +89,6 @@ html{
 }
 
 /*Styles the first and second headers of the website*/
-
 header .header-1, header .header-2{
     display: flex;
     align-items: center;
@@ -101,7 +99,6 @@ header .header-1, header .header-2{
 }
 
 /*Styles the hyperlink at the first header (Shopping)*/
-
 header .header-1 .logo{
     font-size: 2rem;
     color: var(--color1);
@@ -117,7 +114,6 @@ header .header-1 .form-container form{
     display: flex;
 }
 /* Styles the input tag */
-
 header .header-1 .form-container form #search{
     height: 4rem;
     width: 50rem;
@@ -129,7 +125,6 @@ header .header-1 .form-container form #search{
 
 /*Sets the action when you focus or click on the
 search bar. In this case, it removes the border*/
-
 header .header-1 .form-container form #search:focus{
     border: none;
 }
@@ -148,19 +143,16 @@ header .header-1 .form-container form label{
 }
 
 /*Styles the search icon on hover on a desktop view*/
-
 header .header-1 .form-container form label:hover{
     color: var(--color3);
 }
 
 /*Styles the background of the second header (black) */
-
 header .header-2{
     background:var(--color1);
 }
 
 /*Styles the navbar of the second header*/
-
 header .header-2 .navbar ul{
     list-style: none;
     display: flex;
@@ -168,13 +160,11 @@ header .header-2 .navbar ul{
     justify-content: space-between;
 }
 /*Styles each list item of the navbar*/
-
 header .header-2 .navbar ul li{
     margin:0 1rem;
 }
 
 /*Styles the hyperlink in the each list item*/
-
 header .header-2 .navbar ul li a{
     font-size: 2rem;
     color: var(--color2);
@@ -182,14 +172,13 @@ header .header-2 .navbar ul li a{
 
 /*Styles the links upon hover of each list item
 and sets the first link to yellow by default (reason for a.active at line 186)*/
-
 header .header-2 .navbar ul li a.active,
 header .header-2 .navbar ul li a:hover{
     color:var(--color3);
 }
+
 /*Styles the content of the link which are the font awesome icons on
 the second header*/
-
 header .header-2 .icons a{
     color: var(--color2);
     font-size: 2rem;
@@ -209,31 +198,34 @@ header .header-2 #menu{
     cursor: pointer;
     display: none;
 }
-/*styles */
+/*styles header-active, an additional class added in JavaScript
+Check line 13 of JavaScript*/
 header .header-2.header-active{
     position: fixed;
     top:0; left: 0;
     box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
 }
 
-/**/
-
+/*Sets the positioning of the item class that contains the different 
+slider images and the text*/
 .home .home-slider .item{
     position: relative;
 }
-
+/*Styles the size of the image sliders */
 .home .home-slider .item img{
     height: 100vh;
     object-fit: cover;
     width: 100%;
 }
 
+/*Styles the text in the home section*/
 .home .home-slider .item .content{
     position: absolute;
     top:50%; left: 5%;
     transform: translateY(-50%);
 }
 
+/*Styles the heading tag inside the class item*/
 .home .home-slider .item .content h3{
     color : var(--color6);
     text-shadow: 0 .3rem .5rem #000;
@@ -241,6 +233,7 @@ header .header-2.header-active{
     text-transform: uppercase;
 }
 
+/*Styles the paragraph tage inside the class item*/
 .home .home-slider .item .content p{
     color: var(--color2);
     font-size: 2.5rem;
@@ -248,30 +241,36 @@ header .header-2.header-active{
     width: 50rem;
 }
 
+/*Styles the position of the owl carousel slider (jquery plugin)*/
 .home .owl-carousel .owl-prev, .home .owl-carousel .owl-next{
     position: absolute;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
     outline: none;
 }
 
+/*Styles the position of the owl carousel previous arrow*/
 .home .owl-carousel .owl-prev{
-    left: 1.3rem;;
+    left: 1.3rem;
 }
 
+/*Styles the position of the owl carousel next arrow*/
 .home .owl-carousel .owl-next{
-    right:1.3rem;;
+    right: 1.3rem;
 }
 
+/*Styles the carousel arrow color and size*/
 .home .owl-carousel .owl-prev span, .home .owl-carousel .owl-next span{
     color: var(--color2);
     font-size: 7rem;
 }
 
+/*Styles the arrival secion by giving it a min-height*/
 .arrival{
     min-height: 100vh;
 }
 
+/*Styles the box-container class, which contains all the products arrived*/
 .arrival .box-container{
     display: flex;
     align-items: center;
@@ -280,8 +279,10 @@ header .header-2.header-active{
     padding:2rem 0;
     width: 85%;
     margin: 0 auto;
+
 }
 
+/*Styles the box class inside the box-container class which is an article*/
 .arrival .box-container .box{
     flex:1 1 30rem;
     border:.1rem solid rgba(0,0,0,.3);
@@ -293,11 +294,12 @@ header .header-2.header-active{
     box-shadow: 1px 1px 15px .1px var(--arrival-box-shadow);
 }
 
-
+/*Transforms the box article upon hovering on it*/
 .arrival .box-container .box:hover {
     transform: scale(1.1);
 }
 
+/*Styles the class image containing the image of the article*/
 .arrival .box-container .box .image{
     height: 20rem;
     padding:2rem;
@@ -305,17 +307,19 @@ header .header-2.header-active{
     background: var(--background);
 }
 
+/*Styles the image tag of the article*/
 .arrival .box-container .box .image img{
     height: 100%;
     object-fit: cover;
 }
-
+/*Styles the name of the article that is the h3 tag*/
 .arrival .box-container .box .info h3{
     padding:1rem;
     font-size: 2rem;
     color:var(--color1);
 }
 
+/*Styles the class subInfo that contains the star and prices*/
 .arrival .box-container .box .info .subInfo{
     display: flex;
     align-items: center;
@@ -323,23 +327,25 @@ header .header-2.header-active{
     padding:1rem;
     border-top: .1rem solid rgba(0,0,0,.3);
 }
-
+/*Styles the price*/
 .arrival .box-container .box .info .subInfo .price{
     color: var(--price2);
     font-size: 2rem;
 }
 
+/*Styles the discout price*/
 .arrival .box-container .box .info .subInfo .price span{
     color: var(--discount1);
     font-size: 1.5rem;
     text-decoration: line-through;
 }
 
+/*Styles the stars rating*/
 .arrival .box-container .box .info .subInfo .stars i{
     color: var(--star);
     font-size: 1.5rem;
 }
-
+/*Styles the div containing the font awesome icons heart, shopping-cart and search */
 .arrival .box-container .box .overlay{
     position: absolute;
     top:0; left: 0;
@@ -352,10 +358,12 @@ header .header-2.header-active{
     transform: scale(0);
 }
 
+/*Styles the div class overlay upong hovering on the box article*/
 .arrival .box-container .box:hover .overlay{
     transform: scale(1);
 }
 
+/*Styles the hyperlinked icons*/
 .arrival .box-container .box .overlay a{
     font-size: 1.5rem;
     padding:1.5rem 2rem;
@@ -363,13 +371,15 @@ header .header-2.header-active{
     color: var(--overlay-favicon-color);
     margin:1rem;
     transform: translateY(-15rem);
-    transition-delay: calc(.1s * var(--i));
+    transition-delay: calc(.1s * var(--i)); /*Makes them appear consecutively*/
 }
-
+/*Sets actions on the hyperlinked icons upon hovering on the box article (translates in 
+the Y-direction*/
 .arrival .box-container .box:hover .overlay a{
     transform: translateY(0rem);
 }
 
+/*Sets the color of the icons*/
 .arrival .box-container .box .overlay a:hover{
     color:var(--price2);
 }
@@ -783,13 +793,17 @@ header .header-2.header-active{
 
 
 /* media queries  */
+/*Sets the actions when the screen has a max-width of 768px*/
 
 @media (max-width:768px){
 
+    /*Styles the html tag*/
     html{
         font-size: 55%;
         
     }
+
+    /*Styles the input tag on a s*/
     
     header .header-1 .form-container form #search{
         width: 100%;
