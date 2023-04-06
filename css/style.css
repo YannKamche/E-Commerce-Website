@@ -388,7 +388,7 @@ the Y-direction*/
     background:linear-gradient(168deg, #fff 50%, var(--color6) 50.1% ); /*,rgb(215, 154, 154));*/
     padding-bottom: 2rem;
 }
-/*Styles the */
+/*Styles the row container*/
 .feature .row{
     display: flex;
     align-items: center;
@@ -402,7 +402,7 @@ the Y-direction*/
     border-radius: 1rem;
     
 }
-
+/* Styles the brand container */
 .feature .brands {
     display: flex;
     justify-content: space-evenly;
@@ -410,23 +410,26 @@ the Y-direction*/
     background-color: var(--color2);
 }
 
+/* Styles the image container */
 .feature .row .image-container{
     display: flex;
     align-items: center;
 }
 
+/* Styles the big watch image */
 .feature .row .image-container .big-image img{
     height: 30rem;
     margin:2rem 0;
     filter: drop-shadow(0 .1rem .5rem #000);
 }
-
+/* Styles the small image container*/
 .feature .row .image-container .small-image{
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
+    
 }
-
+/* Styles the small images and sets transitions*/
 .feature .row .image-container .small-image img{
     height:6rem;
     padding: 1rem;
@@ -435,36 +438,41 @@ the Y-direction*/
     cursor: pointer;
     transition: .5s ease-in-out;
 }
+/* Sets the action upon hovering on the small images in this case it transforms*/
 .feature .row .image-container .small-image img:hover {
     transform: scale(1.5);
 }
-
+/* Sets the action upon hovering on the small images in this case border changes */
 .feature .row .image-container .small-image img.image-active,
 .feature .row .image-container .small-image img:hover{
     border:.2rem solid var(--color6);
    
 }
 
+/* Styles the content container */
 .feature .row .content{
     padding-left: 6rem;
 }
-
+/* Styles the heading in the content container */
 .feature .row .content h3{
     font-size: 4rem;
     color:var(--blue);
 }
 
+/* Styles the icons in the content container */
 .feature .row .content .stars i{
     font-size: 2rem;
     color: var(--star);
     padding: 1rem 0;
 }
 
+/* Styles the (500+) reviews text */
 .feature .row .content .stars span{
     font-size: 2rem;
     color:#666;
 }
 
+/* Styles the paragraph tag (Lorem) in the content container */
 .feature .row .content p{
     color:#333;
     width: 40rem;
@@ -472,25 +480,30 @@ the Y-direction*/
     padding: 2rem 0;
 }
 
+/* Styles the price */
 .feature .row .content .price{
     color: var(--price2);
     font-size: 2rem;
 }
-
+/* Styles the discount price*/
 .feature .row .content .price span{
     color: var(--discount1);
     text-decoration: line-through;
     font-size: 1.5rem;
 }
 
+/* Styles the button inside content container */
 .feature .row .content .btn{
     margin-left: 2rem;
 }
 
+/* Styles the gallery container by setting it's size to the 
+view height */
 .gallery{
     min-height: 100vh;
 }
 
+/* Styles the unordered list of list items */
 .gallery .controls{
     display: flex;
     align-items: center;
@@ -500,17 +513,18 @@ the Y-direction*/
     list-style: none;
 }
 
+/* Styles each list item */
 .gallery .controls .btn{
     margin:2rem;
     line-height: 4rem;
     text-align: center;
     box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
 }
-
+/* Styles the first list item with a fixed color */
 .gallery .controls .btn.button-active{
     background:#333;
 }
-
+/* Styles the container of images */
 .gallery .image-container{
     display: flex;
     align-items: center;
@@ -518,6 +532,7 @@ the Y-direction*/
     flex-wrap: wrap;
 }
 
+/* Styles a box  */
 .gallery .image-container .box{
     display: flex;
     align-items: center;
@@ -526,7 +541,7 @@ the Y-direction*/
     border:.1rem solid rgba(0,0,0,.3);
     flex:1 1 30rem;
 }
-
+/* Styles the container of the actual image*/
 .gallery .image-container .box .image{
     height:12rem;
     width: 20rem;
@@ -534,13 +549,13 @@ the Y-direction*/
     padding:1rem;
     background: #f0f0f0;
 }
-
+/* Styles the image found in the container */
 .gallery .image-container .box .image img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-
+/* Sets the action upon hovering on the container of the image*/
 .gallery .image-container .box:hover .image{
     background:#ccc;
 }
