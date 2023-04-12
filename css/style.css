@@ -842,6 +842,7 @@ view height */
         box-shadow: 0 0 0 100vh rgba(0,0,0,.3);
         z-index: 10000;
         opacity: 0;
+        backdrop-filter: blur(1.8rem);
     }
 
     .btn:hover {
@@ -850,7 +851,7 @@ view height */
 
     header .header-2 .navbar ul{
         flex-flow: column;
-        background: linear-gradient(transparent, var(--color5) ,transparent);
+        background: linear-gradient(transparent ,transparent);
         border:.2rem solid var(--color5);
         box-shadow: 0 .3rem .5rem #242424;
         padding:4rem 0;
