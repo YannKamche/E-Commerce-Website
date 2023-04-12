@@ -408,6 +408,13 @@ the Y-direction*/
     justify-content: space-evenly;
     align-content: flex-end;
     background-color: var(--color2);
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* Stylest the logo image size */
+.feature .brands img {
+    width: 7.75rem;
+    height: 6.5rem;
 }
 
 /* Styles the image container */
