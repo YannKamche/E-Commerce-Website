@@ -1,5 +1,5 @@
 # E-commerce-Website
-This is a responsive eCommerce website I built using html, css &amp; JavaScript and  JQuery
+This is a responsive eCommerce website I built using html, css &amp; JavaScript and JQuery
 ![Screenshot (389)](https://github.com/YannKamche/E-Commerce-Website/assets/122357201/7c1be997-a68d-493f-9992-45b85e5003ec)
 ![Screenshot (390)](https://github.com/YannKamche/E-Commerce-Website/assets/122357201/91b739c8-d4af-4e5e-ab58-01e40c02bb77)
 ![Screenshot (391)](https://github.com/YannKamche/E-Commerce-Website/assets/122357201/1a15b261-e426-4369-b9f2-90746ee917fc)
